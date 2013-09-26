@@ -1,7 +1,7 @@
 core = "7.x"
 description = "Format outbound emails with custom templates you control."
 name = "Email Wrappers"
-version = 7.x-4.x-dev
+version = 7.x-4.x-daily-20130926
 package = "Jackson River Springboard - extras"
 
 configure = admin/config/content/email_wrappers
