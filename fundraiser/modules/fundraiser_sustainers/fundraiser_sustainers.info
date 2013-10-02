@@ -2,7 +2,7 @@ name = Fundraiser Sustainers
 description = Support sustainer behaviors for fundraiser.
 core = 7.x
 package = Jackson River Springboard
-version = 7.x-4.x-dev
+version = 7.x-4.x-daily-20131002
 dependencies[] = fundraiser
 ;Testing files
 files[] = tests/fundraiser_sustainers.test
