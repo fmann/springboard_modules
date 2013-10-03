@@ -1,7 +1,7 @@
 core = "7.x"
 description = "Provides an interface for selecting webform confirmation page tokens to use with CKEditor."
 name = "Webform token selector"
-version = 7.x-4.x-dev
+version = 7.x-4.x-daily-20131003.1
 package = "Jackson River Springboard - extras"
 
 dependencies[] = webform_user
