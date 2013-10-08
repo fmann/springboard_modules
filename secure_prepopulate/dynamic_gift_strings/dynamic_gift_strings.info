@@ -5,7 +5,7 @@ package = Jackson River Springboard - extras
 dependencies[] = fundraiser_webform
 dependencies[] = secure_prepopulate
 
-version = 7.x-4.x-dev
+version = 7.x-4.x-daily-20131008
 
 files[] = dynamic_gift_strings.install
 files[] = dynamic_gift_strings.module
