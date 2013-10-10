@@ -1,7 +1,7 @@
 name = Fundraiser
 description = Fundraising Module
 core = 7.x
-version = 7.x-4.x-dev
+version = 7.x-4.x-daily-20131010
 package = Jackson River Springboard
 configure = admin/config/system/fundraiser
 dependencies[] = token
