@@ -56,10 +56,46 @@
           return this.optional(element) || /^[0-9]*(\.\d{1,3})*(,\d{1,3})?$/i.test(value);
         }, "Enter a valid amount");
 
+        // Zipcodes
+        // More can be added
+        Drupal.settings.zipRegExp = {
+          countryCode: '^\\d{2}$',
+          countryCodeRegex: new RegExp('123')
+        }
+        //
+        Drupal.behaviors.springboardForms.zipRegex = {
+          us: '^\\d{5}((-|\\s)\\d{4})?$',
+          au: '^\\d{4}$',
+          ca: '^[ABCEGHJKLMNPRSTVXY]{1}\\d{1}[A-Z]{1} *\\d{1}[A-Z]{1}\\d{1}$'
+        };
+        // Build the regex string
+        function buildZipRegex() {
+          var zips = Drupal.behaviors.springboardForms.zipRegex;
+          var zipArr = [];
+          for (var item in zips) { 
+            var countryRegex = '('+zips[item]+')'; 
+            zipArr.push(countryRegex);
+          }
+          if(Drupal.settings.hasOwnProperty('zipRegExp')) {
+            console.log('yes');
+            var addedZips = Drupal.settings.zipRegExp;
+            for (var newitem in addedZips) { 
+              if (addedZips[newitem] instanceof RegExp) {
+                addedZips[newitem] = (''+Drupal.settings.zipRegExp.another+'').replace(/\//g,'');
+              }
+              var addRegex = '('+addedZips[newitem]+')'; 
+              zipArr.push(addRegex);
+            }
+          } 
+          return zipArr.join('|');
+        };
         // Custom zipcode validation
         $.validator.addMethod('zipcode', function(value, element) {
+          // Drupal.settings.buildZipRegex() can override our regex function
+          var zipcodeRegex = (typeof(Drupal.settings.buildZipRegex) == "function") ? Drupal.settings.buildZipRegex() : buildZipRegex();
+          zipcodeRegex = new RegExp(zipcodeRegex,'i');
           // U.S. or Canadian Zip codes
-          return this.optional(element) || /(^\d{5}((-|\s)\d{4})?$)|(^[ABCEGHJKLMNPRSTVXY]{1}\d{1}[A-Z]{1} *\d{1}[A-Z]{1}\d{1}$)|(^\d{4}$)/i.test(value);
+          return this.optional(element) || zipcodeRegex.test(value);
         }, "Enter a valid zipcode");
 
         // Instantiate Form Validation
