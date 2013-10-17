@@ -1,7 +1,7 @@
 name = Fundraiser A/B Test
 description = "Adds special functionality to the Webform A/B Test module for use with Fundraising forms."
 core = 7.x
-version = 7.x-4.x-dev
+version = 7.x-4.x-daily-20131017
 dependencies[] = webform_ab
 dependencies[] = fundraiser_webform
 package = Jackson River Springboard
