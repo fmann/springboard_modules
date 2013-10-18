@@ -1,7 +1,7 @@
 name = Source Code (Market Source)
 description = Provides a way to track which campaigns, market sources, etc. drive users to the site.
 core = 7.x
-version = 7.x-4.x-dev
+version = 7.x-4.x-daily-20131018
 package = Jackson River Springboard
 configure = admin/config/search/market-source
 files[] = tests/market_source.test
