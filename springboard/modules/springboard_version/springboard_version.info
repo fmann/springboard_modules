@@ -2,6 +2,6 @@ name = Springboard Version
 description = Tracks Springboard module dependancies against installed Springboard
 package = Jackson River Springboard
 core = 7.x
-version = 7.x-4.x-dev
+version = 7.x-4.x-daily-20131025
 
 files[] = tests/springboard_version.test
