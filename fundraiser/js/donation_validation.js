@@ -57,12 +57,11 @@
         }, "Enter a valid amount");
 
         // Zipcodes
-        // More can be added
-        Drupal.settings.zipRegExp = {
+        // Example for client-specific country zipcodes:
+        /*Drupal.settings.zipRegExp = {
           countryCode: '^\\d{2}$',
           countryCodeRegex: new RegExp('123')
-        }
-        //
+        }*/
         Drupal.behaviors.springboardForms.zipRegex = {
           us: '^\\d{5}((-|\\s)\\d{4})?$',
           au: '^\\d{4}$',
