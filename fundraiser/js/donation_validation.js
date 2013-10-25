@@ -77,7 +77,6 @@
             zipArr.push(countryRegex);
           }
           if(Drupal.settings.hasOwnProperty('zipRegExp')) {
-            console.log('yes');
             var addedZips = Drupal.settings.zipRegExp;
             for (var newitem in addedZips) { 
               if (addedZips[newitem] instanceof RegExp) {
