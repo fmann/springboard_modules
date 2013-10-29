@@ -3,6 +3,6 @@ description = "Add-on module to Capwiz Connect. Enables passing data from the Ca
 core = 7.x
 package = "Jackson River Springboard - extras"
 dependencies[] = capwiz_connect
-version = 7.x-4.x-dev
+version = 7.x-4.x-daily-20131029
 configure = admin/springboard/capwiz-connect/
 files[] = tests/capwiz_connect_js.test
