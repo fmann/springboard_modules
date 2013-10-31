@@ -2,7 +2,7 @@ name = Salesforce NPSP
 description = Integration functionality specific to the Nonprofit Starter Pack.
 package = Salesforce
 core = 7.x
-version = 7.x-4.x-dev
+version = 7.x-4.x-daily-20131031
 
 dependencies[] = libraries
 dependencies[] = salesforce

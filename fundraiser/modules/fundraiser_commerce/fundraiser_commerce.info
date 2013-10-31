@@ -7,7 +7,7 @@ dependencies[] = commerce_order
 dependencies[] = commerce_payment
 dependencies[] = commerce_customer
 dependencies[] = encrypt
-version = 7.x-4.x-dev
+version = 7.x-4.x-daily-20131031
 ;Testing files
 ;files[] = tests/fundraiser_commerce.unit.test
 files[] = tests/fundraiser_commerce.gateway.test
