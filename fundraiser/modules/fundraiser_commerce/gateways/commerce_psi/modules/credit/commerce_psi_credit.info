@@ -3,4 +3,4 @@ description = Implements Payment Solutions, Inc. credit payment API for use with
 package = Commerce (contrib)
 dependencies[] = commerce_psi
 core = 7.x
-version = 7.x-4.x-dev
+version = 7.x-4.x-daily-20131101.1
