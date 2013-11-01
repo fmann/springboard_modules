@@ -1,7 +1,7 @@
 name = "Springboard Google Analytics Tracking"
 description = "Provides advanced Google Analytics tracking capabilities to Springboard"
 core = 7.x
-version = 7.x-4.x-dev
+version = 7.x-4.x-daily-20131101
 package = "Jackson River Springboard - extras"
 configure = admin/springboard/settings/ga
 dependencies[] = googleanalytics
