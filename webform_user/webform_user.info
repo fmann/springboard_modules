@@ -2,7 +2,7 @@
 name = Webform User
 description = Enables the creation of user accounts from data submitted by forms and questionnaires.
 core = 7.x
-version = 7.x-4.x-dev
+version = 7.x-4.x-daily-20131105
 package = Webform Extra
 configure = admin/config/content/webform_user
 dependencies[] = webform
