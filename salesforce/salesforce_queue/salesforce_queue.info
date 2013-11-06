@@ -2,7 +2,7 @@ name = Salesforce Queue
 description = Batch processing for Salesforce integration.
 package = Salesforce
 core = 7.x
-version = 7.x-3.x-dev
+version = 7.x-3.x-daily-20131106.1
 
 files[] = includes/salesforce_queue.processor.inc
 files[] = includes/salesforce_queue.queue.inc
