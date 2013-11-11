@@ -3,7 +3,7 @@ description = Uses an encrypted url string to pre-populate form fields.
 core = 7.x
 package = Webform Extra
 dependencies[] = webform
-version = 7.x-4.x-dev
+version = 7.x-4.x-daily-20131111.1
 configure = 'admin/config/system/secure-prepopulate'
 
 files[] = secure_prepopulate.admin.inc
