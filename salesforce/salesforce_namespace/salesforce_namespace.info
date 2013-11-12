@@ -2,7 +2,7 @@ name = Salesforce Namespace
 description = Applies a namespace to every external id field so that multiple sites can integrate with a single Salesforce org.
 package = Salesforce
 core = 7.x
-version = 7.x-4.x-dev
+version = 7.x-4.x-daily-20131112.2
 
 dependencies[] = salesforce_queue
 
