@@ -2,7 +2,7 @@ name = Payment Solutions Inc.
 description = Implements Payment Solutions Inc. services for use with Drupal Commerce.
 package = Commerce (contrib)
 core = 7.x
-version = 7.x-4.x-dev
+version = 7.x-4.x-daily-20131114
 
 dependencies[] = commerce
 dependencies[] = commerce_ui
